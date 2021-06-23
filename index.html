@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <title>Sivas Quiz</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./javalar.js"></script>
+</head>
+<body>
+<div class="kapsayici">
+   <div id="anaDiv">
+       <div id="sol_alan">
+           <p id="durum">Puan:</p>
+           <p id="durum"><span id="dogruCevap">0 </span><span>/ </span><span id="soruSayisi"> 0</span></p><br>
+           <p id="durum">Süre:</p>
+           <p id="durum"><span >00:</span><span id="gecenSure">00</span></p>
+       </div>
+	   <div class="orta_alan">
+       <div id="ortaKural">
+           <div id="kural">
+               <p>Kurallar:</p>
+               <p>Yanıt verme süresi 10 saniyedir.</p>
+               <p>Süre dolmadan yanıt vermezseniz cevabınız geçersiz olacaktır.</p>
+			   <p>Joker Hakkı yok.</p>
+			   <p>Yanlış Cevap Doğru Cevabı Etkilememektedir.</p>
+			   <p>Toplam 5 Soru. Başarılar</p>
+           </div>
+       </div>
+	     <div id="soruGetir">
+       </div>
+	   <div id="soruAciklama">
+        <p id="soruSayi">Soru #<span id="soruSayisiArtir">0</span></p>
+        <p id="soru"></p>
+    </div>
+	   </div>
+       
+       <div id="sag_alan">
+           <p id="cevap_nedir">Cevap Nedir?</p>
+           <input type="button" id="btnBasla" onclick="baslat()" value="Yarışmaya Başla">
+           <input type="button" id="btnTekrar" onclick="tekrar()" value="Tekrar Oyna">
+           <div id="cevap_alan">
+            <div class="cevaplar" id="1" onclick="kontrol(this)"></div>
+            <div class="cevaplar" id="2" onclick="kontrol(this)"></div>
+            <div class="cevaplar" id="3" onclick="kontrol(this)"></div>
+            <div class="cevaplar" id="4" onclick="kontrol(this)"></div>
+            <div class="cevaplar" id="5" onclick="kontrol(this)"></div>
+           </div>
+       </div>
+       
+   </div>
+  </div>
+</body>
+</html>
